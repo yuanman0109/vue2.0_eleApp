@@ -6,7 +6,7 @@
       <div class="tab-item"><router-link to="/ratings">评论</router-link></div>
       <div class="tab-item"><router-link to="/seller">商家</router-link></div>
     </div>
-    <router-view></router-view>
+    <router-view :seller="seller"></router-view>
   </div>
 </template>
 
@@ -42,7 +42,7 @@ export default {
       width:100%
       height: 40px;
       line-height: 40px;
-      bodrer-1px(rgba(7,17,27,0.1))
+      border-1px(rgba(7,17,27,0.1))
       .tab-item
         flex: 1
         text-align: center;

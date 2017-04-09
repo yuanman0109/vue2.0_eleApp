@@ -87,119 +87,119 @@ import star from '@/components/star/star'
 </script>
 <style lang="stylus">
 @import '../../assets/style/mixin.styl'
-    .header
-        color:#fff
-        position:relative
-        overflow:hidden
-        background:rgba(7,17,27,0.5)
-        .content-wrapper
-            padding: 24px 12px 18px 24px;
-            font-size: 0
-            position: relative
-            .avatar
+  .header
+    color:#fff
+    position:relative
+    overflow:hidden
+    background:rgba(7,17,27,0.5)
+    .content-wrapper
+      padding: 24px 12px 18px 24px;
+      font-size: 0
+      position: relative
+      .avatar
+          display: inline-block
+          vertical-align: top
+          img
+              border-radius: 2px
+      .content
+        display: inline-block
+        margin-left: 16px
+        font-size: 14px;
+        .title
+            margin:2px 0 8px 0
+            .brand
                 display: inline-block
+                width: 30px
+                height: 18px;
+                bg-image('brand')
+                background-size: 30px 18px
+                background-repeat: no-repeat;
                 vertical-align: top
-                img
-                    border-radius: 2px
-            .content
+            .name
+                margin-left: 6px;
+                font-size: 16px;
+                line-height: 18px;
+                font-weight: bold
+        .description
+            margin-bottom: 10px;
+            line-height: 12px;
+            font-size: 12px;
+        .support
+              .icon
                 display: inline-block
-                margin-left: 16px
-                font-size: 14px;
-                .title
-                    margin:2px 0 8px 0
-                    .brand
-                        display: inline-block
-                        width: 30px
-                        height: 18px;
-                        bg-image('brand')
-                        background-size: 30px 18px
-                        background-repeat: no-repeat;
-                        vertical-align: top
-                    .name
-                        margin-left: 6px;
-                        font-size: 16px;
-                        line-height: 18px;
-                        font-weight: bold
-                .description
-                    margin-bottom: 10px;
-                    line-height: 12px;
-                    font-size: 12px;
-                .support
-                    .icon
-                        display: inline-block
-                        width: 12px;
-                        height: 12px
-                        margin-right:2px;
-                        background-size: 12px 12px;
-                        background-repeat: no-repeat
-                        vertical-align: middle
-                        &.decrease
-                            bg-image('decrease_1')
-                        &.discount
-                            bg-image('discount_1')
-                        &.guarantee
-                            bg-image('guarantee_1')
-                        &.invoice
-                            bg-image('invoice_1')
-                        &.special
-                            bg-image('special_1')
-                    .text
-                        font-size: 10px;
-                        line-height: 12px;
-            .support-count
-              position: absolute
-              right: 12px;
-              bottom: 14px;
-              padding: 0 8px
-              height: 24px;
-              line-height: 24px;
-              border-radius: 14px;
-              background: rgba(0,0,0,0.2)
-              text-align: center
-              .count
+                width: 12px;
+                height: 12px
+                margin-right:2px;
+                background-size: 12px 12px;
+                background-repeat: no-repeat
+                vertical-align: middle
+                &.decrease
+                    bg-image('decrease_1')
+                &.discount
+                    bg-image('discount_1')
+                &.guarantee
+                    bg-image('guarantee_1')
+                &.invoice
+                    bg-image('invoice_1')
+                &.special
+                    bg-image('special_1')
+              .text
                 font-size: 10px;
-                display: inline-block
-                vertical-align: middle
-              i
-                font-size: 12px;
-                display: inline-block
-                vertical-align: middle
-        .bulletion-wrapper
-          position: relative
-          height: 28px;
-          line-height: 28px;
-          padding: 0 22px 0 12px;
-          white-space: nowrap
-          overflow: hidden
-          text-overflow: ellipsis
-          background: rgba(7,17,27,0.2)
-          .bulletin-title
-            display: inline-block
-            vertical-align: top
-            width: 22px;
-            height: 12px;
-            margin-top: 8px;
-            bg-image('bulletin')
-            background-size: 22px; 12px;
-            background-repeat: no-repeat
-          .bulletin-text
-            font-size:10px;
-            margin:0 4px
-            vertical-align: top
-          i
-            position: absolute
+                line-height: 12px;
+      .support-count
+          position: absolute
+          right: 12px;
+          bottom: 14px;
+          padding: 0 8px
+          height: 24px;
+          line-height: 24px;
+          border-radius: 14px;
+          background: rgba(0,0,0,0.2)
+          text-align: center
+          .count
             font-size: 10px;
-            right: 12px
-            top: 8px;
-        .background
-          position:absolute
-          top:0
-          left:0
-          width:100%
-          height:100%
-          z-index:-1
-          filter:blur(10px)
-        .detail
+            display: inline-block
+            vertical-align: middle
+          i
+            font-size: 12px;
+            display: inline-block
+            vertical-align: middle
+    .bulletion-wrapper
+      position: relative
+      height: 28px;
+      line-height: 28px;
+      padding: 0 22px 0 12px;
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+      background: rgba(7,17,27,0.2)
+      .bulletin-title
+        display: inline-block
+        vertical-align: top
+        width: 22px;
+        height: 12px;
+        margin-top: 8px;
+        bg-image('bulletin')
+        background-size: 22px; 12px;
+        background-repeat: no-repeat
+      .bulletin-text
+        font-size:10px;
+        margin:0 4px
+        vertical-align: top
+      i
+        position: absolute
+        font-size: 10px;
+        right: 12px
+        top: 8px;
+    .background
+      position:absolute
+      top:0
+      left:0
+      width:100%
+      height:100%
+      z-index:-1
+      filter:blur(10px)
+    .detail
           position:fixed
           z-index:100
           top:0
